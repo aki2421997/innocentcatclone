@@ -1,0 +1,93 @@
+#project {
+    background: url(https://innocentcats.io/static/media/bg01.af79b7d9887d74fd7b04.png) top no-repeat;
+    height: 100%;
+    min-height: 100vh;
+    padding: 20px 8%;
+}
+
+.project__main {
+    display: flex;
+}
+
+.project_left {
+    width: 69%;
+}
+
+.project_right {
+    padding-left: 10px;
+    width: 31%;
+}
+
+.project__img-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.project__img-flex > img {
+    width: 100%;
+    margin-bottom: 6px;
+}
+
+.project__info {
+    color: white;
+    text-align: center;
+}
+
+/* h1 {
+    color: rgb(144, 255, 0);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 31px;
+    margin: 0px 0px 10px;
+} */
+
+.project__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+
+.project__bottom__left {
+    font-size: xx-small;
+    color: lightgray;
+}
+
+.project__bottom__right {
+    display: flex;
+}
+
+@media screen and (min-width: 1024px) {
+    #project {
+        background: url(https://innocentcats.io/static/media/bg01.af79b7d9887d74fd7b04.png) top no-repeat;
+        height: 100%;
+        min-height: 100vh;
+        padding: 14% 8%;
+        background-size: 100% 100%;
+    }
+    .project__main {
+        flex-direction: row-reverse;
+    }
+    .project_right {
+        padding-left: 10px;
+        width: 50%;
+    }
+    .project_left {
+        width: 50%;
+    }
+    .project__img-flex {
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+    }
+    .project__img-flex > img {
+        width: 30%;
+        margin: 0px 10px;
+    }
+    .project__img-flex > img:first-child, .project__img-flex > img:last-child{
+        margin: 0px 0px;
+    }
+    .project__info, .project__bottom {
+        display: none;
+    }
+}

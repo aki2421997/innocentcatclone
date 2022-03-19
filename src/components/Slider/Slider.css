@@ -1,0 +1,28 @@
+.slider--wrap {
+    overflow-x: hidden;
+}
+
+.slider {
+    --translatelen: 0;
+    --transitiontime: 0ms;
+    display: flex;
+    transform: translateX(var(--translatelen));
+    transition: transform linear var(--transitiontime);
+}
+
+.slider > * {
+    flex-shrink: 0;
+    width: calc(100%/3);
+    transform: scale(0.75);
+    opacity: 0.6;
+    transition: opacity linear 200ms, transform linear 100ms;
+}
+
+.slider > *.active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.slider img {
+    width: 100%;
+}

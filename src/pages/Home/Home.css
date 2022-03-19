@@ -1,0 +1,84 @@
+#home {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.home__sticker-top {
+    position: absolute;
+    top: 4%;
+    right: 50%;
+    transform: translate(50%,0);
+    width: 73%;
+}
+
+.home__sticker-left {
+    position: absolute;
+    bottom: 70px;
+    left: 20px;
+    height: 50vh
+}
+
+.home__sticker-right {
+    position: absolute;
+    bottom: 70px;
+    right: 20px;
+    height: 50vh
+}
+
+.home__sticker-bottom {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    right: 24px;
+    text-align: center;
+    font-size: 11px;
+}
+
+.home__sticker-bottom > div:nth-child(1) {
+    position: absolute;
+    bottom: 4rem;
+    padding: 0px 20% 0px 20%;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.home__sticker-bottom > div:nth-child(2) {
+    color: white;
+}
+.home__sticker-bottom > div:nth-child(2) > span {
+    position: relative;
+    top: 6px;
+}
+
+.home__sticker-bottom > div:nth-child(2) > span:nth-child(1) {
+    margin-right: 20px;
+}
+
+.home__sticker-bottom > div:nth-child(2) > span:nth-child(2) {
+    margin-left: 20px;
+}
+ #home img {
+     height: 100%;
+     width: 100%;
+ }
+
+ @media screen and (min-width: 1024px) {
+    .home__sticker-top {
+        position: fixed;
+        top: 7%;
+        left: 3%;
+        transform: none;
+        width: 8%;
+    }
+    .home__sticker-left {
+        display: none;
+    }
+    .home__sticker-right {
+        position: absolute;
+        right: 3%;
+        height: 74vh;
+        top: 7%;
+    }
+ }

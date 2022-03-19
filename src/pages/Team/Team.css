@@ -1,0 +1,15 @@
+#team {
+    background-color: black;
+    padding: 20px 8%;
+}
+
+.team__top {
+    text-align: right;
+}
+
+.team__top > .heading {
+    color: rgb(144, 255, 0);
+    font-weight: 400;
+    letter-spacing: 2px;
+    word-spacing: 6px;
+}

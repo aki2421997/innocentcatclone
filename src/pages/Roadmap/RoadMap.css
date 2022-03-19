@@ -1,0 +1,92 @@
+#roadmap {
+    background-color: black;
+    padding: 20px 8%;
+}
+
+#roadmap__top > h1 {
+    color: rgb(144, 255, 0);
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 36px;
+    margin: 0px 0px 10px;
+}
+
+#roadmap__main {
+    position: relative;
+}
+
+#roadmap__main > div:nth-child(2n+1) p{
+    text-align: right;
+}
+
+.roadmap__marker {
+    position: absolute;
+    background-color: white;
+    height: 8px;
+    width: 8px;
+    left: 0px;
+    top: 0px;
+}
+
+.roadmap__item {
+    padding-left: 45px;
+    position: relative;
+}
+
+#roadmap__main > .roadmap__item:nth-last-child(2) > .roadmap__marker {
+    position: absolute;
+    background-color: white;
+    height: 8px;
+    width: 8px;
+    left: 0px;
+    top: 100%;
+}
+
+#roadmap__main > .roadmap__item:first-child > .roadmap__marker {
+    position: absolute;
+    background-color: white;
+    height: 8px;
+    width: 8px;
+    left: -5px;
+    top: -6px;
+    border: 5px solid black;
+    outline: 2px solid white;
+    z-index: 1;
+}
+
+#roadmap__top {
+    margin-bottom: 40px;
+}
+
+#roadmap__track {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: white;
+    top: 0px;
+    left: 4px;
+}
+
+@media screen and (min-width: 1024px) {
+    #roadmap__main {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    #roadmap__track {
+        left: 50%;
+        transform: translateX(22.5px);
+    }
+    #roadmap__main > div:nth-child(2n+1) > .roadmap__marker,
+    #roadmap__main > .roadmap__item:nth-last-child(2) > .roadmap__marker
+    {
+        left: 100%;
+        transform: translateX(18.5px);
+    }
+    #roadmap__main > .roadmap__item:first-child > .roadmap__marker {
+        left: 100%;
+        transform: translateX(13.5px);
+    }
+    #roadmap__main > div:nth-child(2n) > .roadmap__marker{
+        transform: translateX(19px);
+    }
+}

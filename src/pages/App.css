@@ -1,0 +1,51 @@
+#app_footer {
+    background-color: black;
+    padding: 0px 8%;
+    padding-bottom: 30px;
+    padding-top: 50px;
+}
+
+.footer--flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer--flex > p {
+    color: white;
+    font-size: xx-small;
+}
+
+.footer--flex > div {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.footer--flex > div > img {
+    height: 30px;
+}
+
+#app_footer > p {
+    color: white;
+    font-size: xx-small;
+    max-width: 50%;
+}
+
+#app_footer > div > img {
+    width: 35px;
+    margin-right: 15px;
+}
+
+#app_footer > div > img:last-child {
+    width: 35px;
+    margin-right: 0px;
+}
+
+@media screen and (min-width: 1024px) {
+    .footer--flex > div {
+        position: absolute;
+        top: 2%;
+        right: 3%;
+        width: 15%;
+    }
+}

@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.app_footer {
+  background-color: black;
+  padding: 0px 24px;
+}
+
+.app_footer {
+  display: flex;
+}
